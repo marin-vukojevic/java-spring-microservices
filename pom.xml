@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.decodetamination</groupId>
+    <artifactId>java-spring-microservices</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-parent</artifactId>
+        <version>2022.0.2</version>
+    </parent>
+
+    <modules>
+        <module>item-service</module>
+        <module>discovery-service</module>
+        <module>order-service</module>
+        <module>api-definitions</module>
+        <module>config-service</module>
+        <module>admin-service</module>
+        <module>billing-service</module>
+        <module>gateway-service</module>
+    </modules>
+
+    <properties>
+        <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
+        <lombok.mapstruct.binding.version>0.2.0</lombok.mapstruct.binding.version>
+    </properties>
+
+</project>
